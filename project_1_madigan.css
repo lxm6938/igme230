@@ -58,8 +58,8 @@ box-sizing: border-box;
 .all_content{
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 110px;
+    padding-bottom: 100px;
     display: flex;
     width: 85%;
     flex-direction: row;
