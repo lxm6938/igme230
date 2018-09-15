@@ -45,7 +45,7 @@ h1{
 }
 
 #infobox img{
-    max width: 100%;
+    max-width: 100%;
 }
 
 #infobox th, #infobox td{
