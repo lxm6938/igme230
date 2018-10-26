@@ -41,15 +41,14 @@
 </div>
 
 <script>
-	let currentColor;
+let currentColor;
 let radios = document.getElementsByName("colorGroup"); //creates an array out of the radio button groups.. getElementsByName returns an array of all elements with the name of colorGroup
 
 let button = document.getElementById("colorButton");
 button.onclick = buttonHandler;
 
 for (let i of radios){ //"i of radios" replaces let i=0, i<radios.length, i++
-	i.onclick = clickHandler; //no parentheses.. if you had the parentheses there
-
+	i.onclick = clickHandler;
 }
 
 function clickHandler(element){
