@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Events Exercise</title>
+	<style>
+           @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+
+		html {
+			font-family:Lato, sans-serif;
+            font-size: 16px;
+		}
+		#colorform{
+			background-color:#dfecdf;
+			color: #111;
+			padding:1em;width:400px;
+		}
+		#colorform p#info{
+			background-color:white;
+			color: black;
+			width:300px;
+			height:100px;
+			padding:.5em;
+		}
+		
+		#colorform legend{ 
+			font-weight:bold;
+			font-size:1.2em;
+		}
+	</style>
+</head>
+<body>
+
+<div id="colorform">
+	<legend>Choose your favorite color!</legend>
+	<p><input type="radio" name="colorGroup" value="red" /> Red</p>
+	<p><input type="radio" name="colorGroup" value="green" /> Green</p>
+	<p><input type="radio" name="colorGroup" value="blue" /> Blue</p>
+	<p><button id="colorButton" type="button">Submit</button></p>
+	<p id="info"></p>
+</div>
+
+<script>
+	let currentColor;
+let radios = document.getElementsByName("colorGroup"); //creates an array out of the radio button groups.. getElementsByName returns an array of all elements with the name of colorGroup
+
+let button = document.getElementById("colorButton");
+button.onclick = buttonHandler;
+
+for (let i of radios){ //"i of radios" replaces let i=0, i<radios.length, i++
+	i.onclick = clickHandler; //no parentheses.. if you had the parentheses there
+
+}
+
+function clickHandler(element){
+	let para = document.getElementById("info") //puts info paragraph into the para variable that we can manipulate
+	currentColor = element.target.value;
+
+	para.innerHTML = "The color you selected is: " + element.target.value; //grabs the value of the button picked
+}
+
+function buttonHandler(){
+	let para = document.getElementById("info") //puts info paragraph into the para variable that we can manipulate
+
+	para.innerHTML = "The final value you selected is: " + currentColor; //grabs the value of the button picked
+
+	let legend = document.getElementsByTagName("legend")[0]; 
+	legend.style.backgroundColor = currentColor;
+}
+</script>
+</body>
+</html>

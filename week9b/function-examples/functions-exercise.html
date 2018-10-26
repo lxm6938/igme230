@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Week 9 Homework</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+       html { font-family: Lato; font-size: 16px; }
+       main { max-width: 800px; margin: 0 auto; border: 1px dotted black; padding: 0 10px;} h1 { font-weight: 900;}
+   </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>My Favorites</h1>
+        <h2>My Favorite Colors</h2>
+    
+        <ol id="colorsList">
+    
+        </ol>
+    
+        <h2>My Favorite Foods</h2>
+    
+        <ol id="foodsList">
+    
+        </ol>
+    
+      </main>
+    
+    <script>
+        "use strict";
+        let colors = ["Red", "Blue", "Green"]; // add some colors
+        let foods = ["Chicken" , "Pizza" , "Pasta"]; // add some foods
+
+        // for (let i of colors){ //replaces i = 0, i < array.length, i++
+        //     let element = document.createElement("li"); //create list item for element (My Favorite Colors List)
+        //     let text = document.createTextNode(i); //Creates content to go inside of <li> 
+            
+        //     element.appendChild(text); //adds the content from let text into the <li> created by element
+
+        //     let list = document.getElementById("colorsList"); //connects list to the "colorsList" ol
+        //     list.appendChild(element); //adds all content of element into the ol
+        // }
+
+        // for (let i of foods){
+        //     let element = document.createElement("li"); //create list item for element (My Favorite Colors List)
+        //     let text = document.createTextNode(i); //Creates content to go inside of <li> 
+            
+        //     element.appendChild(text); //adds the content from let text into the <li> created by element
+
+        //     let list = document.getElementById("foodsList"); //connects list to the "colorsList" ol
+        //     list.appendChild(element); //adds all content of element into the ol
+        // }
+
+        function createList(listElement,array){
+            for (let i of array){
+                let element = document.createElement("li"); //create list item for element (My Favorite Colors List)
+                let text = document.createTextNode(i); //Creates content to go inside of <li> 
+                
+                element.appendChild(text); //adds the content from let text into the <li> created by element
+
+                let list = document.getElementById(listElement); //connects list to the "colorsList" ol
+                list.appendChild(element); //adds all content of element into the ol
+            }
+        }
+
+        createList("colorsList", colors);
+        createList("foodsList", foods);
+      
+
+    </script>
+    
+</body>
+
+</html>
