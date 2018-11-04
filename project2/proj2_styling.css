@@ -646,6 +646,7 @@ footer{
         justify-content: space-between;
         flex-direction: column;
         margin-bottom: 50px;
+        align-items: baseline;
     }
     
     .role_year{
