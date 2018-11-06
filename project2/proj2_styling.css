@@ -804,20 +804,6 @@ footer{
             opacity: 0.5;
         }
         
-        /* landing page text styling */
-        
-        .intro_text{
-            margin-top: 180px;
-            margin-left: 150px;
-            width: 600px;
-            margin-bottom: 200px;
-        }
-        
-        .intro_text_para{
-            width: 485px;
-            margin-bottom: 25px;
-        }
-        
         .bolded{
             font-weight: 700;
         }
