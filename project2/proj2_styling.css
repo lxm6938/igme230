@@ -764,7 +764,7 @@ footer{
         }
 
         footer{
-            display: none;
+            display: none !important;
         }
 
         a:after {
@@ -774,6 +774,302 @@ footer{
         @page {
             margin: 2cm;
           }
+          
+          nav{
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+        }
+        
+        p.nav_item{
+            font-size: 14px;
+            font-weight: 700;
+            transition-duration: 0.3s;
+        }
+        
+        p.nav_item:hover {
+            cursor: pointer;
+            color: #23C8DF;
+        }
+        
+        /* styling logo */
+        
+        .logo {
+            opacity: 1;
+            transition-duration: 0.5s;
+        }
+        
+        .logo:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        
+        /* landing page text styling */
+        
+        .intro_text{
+            margin-top: 180px;
+            margin-left: 150px;
+            width: 600px;
+            margin-bottom: 200px;
+        }
+        
+        .intro_text_para{
+            width: 485px;
+            margin-bottom: 25px;
+        }
+        
+        .bolded{
+            font-weight: 700;
+        }
+        
+        .colored_link{
+            color: #23C8DF;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: inset 0 0px 0 white, inset 0 -2px 0 #23C8DF;
+        }
+        
+        .name{
+            color: #23C8DF;
+        }
+        
+        /* h1, h2, h3 styling */
+        
+        h1{
+            font-family: 'Lobster';
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        
+        h2{
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        h3{
+            font-size: 20px;
+            font-weight: 700;
+            color: #23C8DF;
+        }
+        
+        /* grid styling and images*/
+        
+        .project_grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows:  repeat(12, 1fr);
+            grid-template-areas: 
+              ". . . . . . b b b b b b"
+              "a a a a a a b b b b b b"
+              "a a a a a a b b b b b b"
+              "a a a a a a b b b b b b"
+              "a a a a a a b b b b b b"
+              "a a a a a a b b b b b b"
+              "c c c c c c b b b b b b"
+              "c c c c c c d d d d d d"
+              "c c c c c c d d d d d d"
+              "c c c c c c d d d d d d"
+              "c c c c c c d d d d d d"
+              "c c c c c c d d d d d d";
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            width: 78%;
+            padding-left: 150px;
+            padding-right: 150px;
+            height: 1000px;
+            margin: auto;
+            margin-bottom: 300px;
+        }
+        
+        .twobulls{
+            grid-area: a;
+            background-image: url("images/twobulls.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition-duration: 0.3s;
+            border-radius: 10px;
+            display: block;
+        }
+        
+        .twobulls:hover{
+            cursor: pointer;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+        }
+        
+        .dmv{
+            grid-area: b;
+            background-image: url("images/dmv.png");
+            background-size: 1000px;
+            background-repeat: no-repeat;
+            transition-duration: 0.3s;
+            border-radius: 10px;
+            height: 566px;
+        }
+        
+        .dmv:hover{
+            cursor: pointer;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+        }
+        
+        .iris{
+            grid-area: c;
+            background-image: url("images/iris.png");
+            background-size: 900px;
+            background-repeat: no-repeat;
+            background-position: right;
+            transition-duration: 0.3s;
+            border-radius: 10px;
+            height: 480px;
+        }
+        
+        .iris:hover{
+            cursor: pointer;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+        }
+        
+        .uni_news{
+            grid-area: d;
+            background-image: url("images/uni.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition-duration: 0.3s;
+            border-radius: 5px;
+            height: 393px;
+        }
+        
+        .uni_news:hover{
+            cursor: pointer;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+        }
+        
+        /* work pages begin */
+        
+        .lead_image{
+            width: 80%;
+            height: auto;
+            margin: auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+        }
+        
+        .page_content{
+            margin-top: 100px;
+            padding: 0px 150px 0px 150px;
+            max-width: 80%;
+        }
+        
+        .work_page_para{
+            max-width: 450px;
+            margin-bottom: 20px;
+        }
+        
+        .project_info{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 50px;
+        }
+        
+        .role_year{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 70px;
+            text-align: right;
+        }
+        
+        .role{
+            width: 165px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .year{
+            width: 165px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .description{
+            max-width: 80%;
+        }
+        
+        /* about page css */
+        
+        .about_flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 100px;
+            padding: 0px 150px 0px 150px;
+        }
+        
+        .about_image{
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+        }
+        
+        /* resume page css */
+        
+        .resume_content{
+            margin-top: 100px;
+            padding: 0px 150px 0px 150px;
+        }
+        
+        .resume_header{
+            font-family: 'Lobster';
+            font-size: 30px;
+        }
+        
+        .resume_section{
+            margin-bottom: 150px;
+        }
+        
+        .experience_content{
+            width: 100%;
+            margin-top: 50px;
+        }
+        
+        .experience_job{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        
+        .resume_para{
+            max-width: 550px;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+        
+        /* documentation page css */
+        
+        .documentation_content{
+            margin-top: 100px;
+            padding: 0px 150px 0px 150px;
+        }
+        
+        .doc_sources{
+            margin-bottom: 100px;
+        }
+        
+        .challenges_flex{
+            margin-top: 70px;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 100px;
+        }
+        
+        .project_grid_mobile{
+            display: none;
+        }
     }
 }
 
