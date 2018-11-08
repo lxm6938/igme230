@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>JQuery 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #navpanel {
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <button id="show">Show</button> <button id="hide">Hide</button>
+    <div id= "navpanel">
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+        </ul>
+    </div>
+    
+
+    <script>
+    $("button").click(function(){
+        $("#navpanel").hide(300); 
+    });
+
+    $("#show").click(function(){
+        $("#navpanel").show(300);
+    })
+    </script>
+</body>
+</html>

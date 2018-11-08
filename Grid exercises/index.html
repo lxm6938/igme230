@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        html, body {margin: 0; padding: 0; }
+
+        #container{
+            background-color: chartreuse;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        #mygrid {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 90%;
+            max-width: 1000px;
+            height: 100vh;
+        }
+
+        #mygrid div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            background-color: pink;
+        }
+
+        .headerbar{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .sidebar{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .bottom_footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="mygrid">
+    <div class="headerbar">Cell 1</div>
+    <div class="sidebar">Cell 2</div>
+    <div>Cell 3</div>
+    <div>Cell 4</div>
+    <div>Cell 5</div>
+    <div>Cell 6</div>
+    <div class="bottom_footer">Cell 7</div>
+</div>
+</div>
+</body>
+</html>
