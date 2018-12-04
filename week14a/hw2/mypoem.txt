@@ -4,5 +4,5 @@ I am<br>
 An amalgam of sorts.<br></p>
 
 <p id="verse2">Lying in wait<br>
-In the dead of night,<br>
+In the dead of night.<br>
 </p>
