@@ -18,14 +18,6 @@ body {
     margin: 0;
 }
 
-header,
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #86af49;
-}
-
 nav,
 aside,
 article {
@@ -34,6 +26,18 @@ article {
 
 nav, aside {
     background-color: #b5e7a0;
+}
+
+
+/**************
+Your Formatting
+***************/
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #86af49;
 }
 
 .menuitem{
@@ -53,22 +57,15 @@ nav, aside {
     background: lightgray;
 }
 
-
-
-/**************
-Your Formatting
-***************/
-
 #wrapper{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    grid-template-areas: 
+    max-width: 100vw;
+    grid-template-areas:
     "header"
     "nav"
     "article"
     "aside"
-    "footer";
+    "footer"
 }
 
 header{
@@ -92,18 +89,17 @@ footer{
 }
 
 @media (min-width: 800px) {
-  #wrapper{
-      margin: auto;
-      display: grid;
-      width: 90vw;
-      max-width: 1200px;
-      min-height: 100vh;
-      grid-template-columns: 1fr 2fr 200px;
-      grid-template-rows: 4rem 1fr 3rem;
-      grid-template-areas:
-      "header header header"
-      "aside article nav"
-      "footer footer footer";
-  }
-    
+    #wrapper{
+        margin: auto;
+        width: 90vw;
+        max-width: 1200px;
+        min-height: 100vh;
+        grid-template-columns: 1fr 2fr 200px;
+        grid-template-rows: 4rem 1fr 3rem;
+        grid-template-areas:
+        "header header header"
+        "aside article nav"
+        "footer footer footer";
+    }
 }
+
