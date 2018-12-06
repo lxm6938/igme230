@@ -5,7 +5,7 @@ $(document).ready(() => {
     $('#content').load(content1)
 })
 
-$('.menuitem').on('click', function() {
+$('.menuitem').on('click', function(){
     $(this).next().slideToggle()
 })
 

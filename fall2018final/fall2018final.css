@@ -1,0 +1,141 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+/* establishing css requirements (not including grid) */
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.top{
+    width: 6rem;
+    background-color: #ccc;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list{
+    list-style: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ddd;
+    /* assigning a position absolute so that it slides OVER other content */
+    position:absolute; 
+    /* assigning equal width as the menu title (.top) */
+    width: 6rem;
+}
+
+li{
+    padding-left: .25rem;
+    background-color: #ddd;
+}
+
+/* setting up mobile grid */
+#mygrid{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 30px auto auto 30px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "article"
+    "aside"
+    "footer";
+}
+
+/* assigning grid area/color to header */
+header{
+    grid-area: header;
+    background-color: lightpink;
+}
+
+/* assigning grid area/color to nav */
+nav{
+    grid-area: nav;
+    background-color: lavenderblush;
+}
+
+/* assigning grid area/color to article*/
+article{
+    grid-area: article;
+    background-color: lightcyan;
+}
+
+/* assigning grid area/color to aside */
+aside{
+    grid-area: aside;
+    background-color: lightblue;
+}
+
+/* assigning grid area/color to footer */
+footer{
+    grid-area: footer;
+    background-color: lightpink;
+}
+
+/* desktop media query */
+
+@media (min-width: 800px){
+    #mygrid{
+    margin: auto;
+    width: 90vw;
+    max-width: 1000px;
+    min-height: 100vh;
+    grid-template-rows: 75px 30px auto 50px;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    "header header"
+    "article nav"
+    "article aside"
+    "footer footer";
+    
+}
+}

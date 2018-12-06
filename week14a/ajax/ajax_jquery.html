@@ -82,9 +82,9 @@
         $("#verse-choose").val(verse); // changes menu option to default
         $("#selectedverse").load(verse);   // retrieves only default element
 
-        $("#verse-choose").change(function() {
-        verse = $(this).val();
-        $("#selectedverse").load(verse); 
+        $("#verse-choose").change(function() { //when the chosen verse changes, run this function
+        verse = $(this).val(); //takes value of chosen verse and creates variable out of it
+        $("#selectedverse").load(verse); //loads selected verse into the div
 });
     </script>
 </body>
