@@ -1,0 +1,128 @@
+/* print media query */
+
+@media print {
+    header{
+        display: none !important ;
+    }
+
+    mobile_header{
+        display: none;
+    }
+
+    footer{
+        display: none !important;
+    }
+
+    a:after {
+        content: "("attr(href)")";
+      }
+      
+      nav{
+        display: flex;
+        width: 400px;
+        justify-content: space-between;
+    }
+    
+    p.nav_item{
+        font-size: 14px;
+        font-weight: 700;
+        transition-duration: 0.3s;
+    }
+    
+    p.nav_item:hover {
+        cursor: pointer;
+        color: #23C8DF;
+    }
+    
+    /* styling logo */
+    
+    .logo {
+        opacity: 1;
+        transition-duration: 0.5s;
+    }
+    
+    .logo:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    
+    .bolded{
+        font-weight: 700;
+    }
+    
+    .colored_link{
+        color: #23C8DF;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: inset 0 0px 0 white, inset 0 -2px 0 #23C8DF;
+    }
+    
+    .name{
+        color: #23C8DF;
+    }
+    
+    /* h1, h2, h3 styling */
+    
+    h1{
+        font-family: 'Lobster';
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    
+    h2{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    
+    h3{
+        font-size: 20px;
+        font-weight: 700;
+        color: #23C8DF;
+    }
+    
+    .page_content{
+        margin-top: 100px;
+        padding: 0px 150px 0px 150px;
+        max-width: 80%;
+    }
+    
+    .work_page_para{
+        max-width: 450px;
+        margin-bottom: 20px;
+    }
+    
+    /* resume page css */
+    
+    .resume_content{
+        margin-top: 100px;
+        padding: 0px 150px 0px 150px;
+    }
+    
+    .resume_header{
+        font-family: 'Lobster';
+        font-size: 30px;
+    }
+    
+    .resume_section{
+        margin-bottom: 150px;
+    }
+    
+    .experience_content{
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .experience_job{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    
+    .resume_para{
+        max-width: 550px;
+        margin-bottom: 20px;
+        opacity: 0.5;
+    }
+}
+

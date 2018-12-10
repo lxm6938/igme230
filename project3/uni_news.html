@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project 2 - Liam Madigan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="proj2_styling.css" />
+    <link href="print.css" rel="stylesheet" media="print" type="text/css" />
+    <script src="proj3.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,600,700|Shrikhand" rel="stylesheet">
+</head>
+
+<body>
+        <header>
+                <div class="header_flex">
+                    <div class="logo"><a href="index.html"><img src="images/M_logo.svg" alt="logo" width="40" height="40"></a>
+                    </div>
+            
+                    <nav>
+                        <p class="nav_item"><a href="index.html">WORK</a></p>
+                        <p class="nav_item"><a href="about.html">ABOUT</a></p>
+                        <p class="nav_item"><a href="resume.html">RESUME</a></p>
+                        <p class="nav_item"><a href="documentation.html">DOCUMENTATION</a></p>
+                    </nav>
+                </div>
+                </header>
+        
+            <!-- mobile hamburger menu code provided by mutedblues of codepen (https://codepen.io/mutedblues/pen/MmPNPG) -->
+        
+            <header class="mobile_header">
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                      <li><a href="index.html"><span class="bolded">WORK</span></a></li>
+                      <li><a href="about.html"><span class="bolded">ABOUT</span></a></li>
+                      <li><a href="resume.html"><span class="bolded">RESUME</span></a></li>
+                      <li><a href="documentation.html"><span class="bolded">DOCUMENTATION</span></a></li>
+                    </ul>
+                  </header>
+        <!-- button html -->
+                  <button onclick="topFunction()" id="button" title="Go to top"><p><span class="bolded">BACK TO TOP</span></p></button>
+
+        <div class="lead_content">
+                <div class="title_description">
+                <h1><span class="news_title">University News Reskin</span></h1>
+                <p class="work_page_para">RIT’s University News is the official RIT news website for students, faculty and the public, bringing them the latest news and updates about the college and campus. The objective for this project was to re-skin the website in order to make for a more usable experience and elevate the website to its full potential.
+                </p>
+
+                <div class="role_year">
+                        <div class="role">
+                        <p><span class="bolded">ROLE:</span></p>
+                        <p>Visual Design</p>
+                    </div>
+        
+                    <div class="year">
+                        <p><span class="bolded">YEAR:</span></p> <p>Fall 2017</p>  
+                    </div>
+                </div>
+                </div>
+                <div class="lead_uni_news"></div>
+            </div>
+
+            <video class="news_video" autoplay loop>
+                    <source src="images/University News.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+
+        <div class="page_content">
+            <div class="research">
+                    <p><span class="uni_news_title">FOCUS AREAS</span></p>
+                        <p class="page_content_para">The current RIT University News website misses the mark for delivering engaging content to its users on a daily basis. After taking a deep-dive into the site, I chose to pull out and focus on three areas specifically:
+                    </p>
+
+                    <img class="uni_news_current" src="images/university_news_current.png">
+                    <p class="image_caption">The current University News website</p>
+
+                    <div class="focus_points">
+                        <div class="focus_card">
+                            <p><span class="bolded">Content Hierarchy</span></p>
+                            <p class="focus_areas">Establish a clear hierarchy, allowing the user to easily skim the content and find what they are looking for.</p>
+                        </div>
+                        <div class="focus_card">
+                                <p><span class="bolded">Content Grouping</span></p>
+                                <p class="focus_areas">Effectively group and display content in a manner that allows a user to easily find what they are looking for.</p>
+                        </div>
+                        <div class="focus_card">
+                                <p><span class="bolded">Gridded Structure</span></p>
+                                <p class="focus_areas">Employ a strong grid structure in my design to keep alignment consistent throughout.</p>
+                        </div>
+                    </div>
+
+                    
+            </div>
+
+            <div class="initial_wireframes">
+                    <p><span class="uni_news_title">INITIAL WIREFRAMES</span></p>
+                    <p class="page_content_para">After completing the first version of my reskin, I found myself frustrated with my overall design. Though clean, I felt that certain pieces of information still felt too clustered for my liking. Though some points of the design worked well, it was clear I needed to step back and iterate more in order to produce the best result.
+                </p>
+            </div>
+
+            <div class="uni_wireframe">
+                    <img class="wireframe_uni_image" src="images/uni_news_wireframe.png">
+                </div>
+
+            <div class="features">
+
+                <div class="feature_left_pic">
+                    <img class="featured_pic" src="images/uni_news_features-06.png">
+                    <div class="feature_description">
+                            <h3>Full-width Feature Story</h3>
+                            <p class="feature_para">Immediately attract a user’s attention to the day’s top story, providing a stronger sense of hierarchy.</p>
+                    </div>
+                </div>
+
+                <div class="feature_right_pic">
+                        <div class="feature_description">
+                                <h3>Article Cards and Scale Hierarchy</h3>
+                                <p class="feature_para">While keeping to a gridded structure, offer a variation in scale to emphasize specific articles for the user to view.</p>
+                        </div>
+
+                        <img class="article_cards_pic" src="images/article cards-07.png">
+                    </div>
+
+                    <div class="feature_left_pic">
+                            <img class="event_card" src="images/uni_news_features-04-04.png">
+                            <div class="feature_description">
+                                    <h3>Event Card</h3>
+                                    <p class="feature_para">Combine images and easily digestible information with a card-based format, allowing for improved scannability.</p>
+                            </div>
+                        </div>
+
+                    <div class="feature_right_pic">
+                            <div class="feature_description">
+                                    <h3>Scoreboard</h3>
+                                    <p class="feature_para">Allow users to easily view the outcomes of sporting events in a glanceable scoreboard format.</p>
+                            </div>
+        
+                            <img class="scoreboard_pic" src="images/uni_news_features-05.png">
+                            </div>
+        </div>
+
+        <div class="final_design">
+                <img class="finaldesign_uni_image" src="images/uni_news_final-01-01.png">
+            </div>
+
+            <div class="conclusion">
+                    <p><span class="uni_news_title">CONCLUSION</span></p>
+                    <p class="conclusion_para">As designers, we are forced to recognize and confront our mistakes and shortcomings in order to achieve success as an end-goal. This project was a good lesson in allowing myself to step back and refocus, and ultimately allowed me to produce a stronger project in the end.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+                <div class="f_content">
+                    <div class="footer_text">
+                    <p class="footer_text"><span class="bolded">Whats up?</span></p>
+                    <p class="footer_intro">I’m Liam, a designer with a conflicting passion between design and wing dip. 
+                        I’m an extrovert at my core, and I’d love to get to know you! </p>
+                    </div>
+            
+                    <div class="email_etc">
+                        <div class="email">
+                            <p class="footer_text"><span class="bolded"><a class="footer_link" href="mailto:someone@yoursite.com">lmadigandesign@gmail.com</a></span></p>
+                        </div>
+            
+                        <div class="social_links">
+                        <div class="links_left">
+                                <p class="footer_link"><a class="footer_link" href="https://www.behance.net/liammailma3d42">Behance</a></p>
+                                <p class="footer_link"><a class="footer_link" href="https://www.facebook.com/maddog0629">Facebook</a></p>
+                        </div>
+            
+                        <div class="links_right"> 
+                            <p class="footer_link"><a class="footer_link" href="https://www.linkedin.com/in/liam-madigan/">LinkedIn</a></p>
+                            <p class="footer_link"><a class="footer_link" href="https://dribbble.com/MrMadAgain">Dribbble</a></p></div>
+                    </div>
+                </div>
+            </div>
+                </footer>
+</body>
+    </html>
